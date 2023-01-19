@@ -1,0 +1,185 @@
+local Players = game:GetService("Players")
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+repeat wait() until game:IsLoaded()
+if game.PlaceId == 4739557376 then
+
+    game:GetService("Players").LocalPlayer.ChildAdded:Connect(function(Item)
+        if Item.Name == "Tokens" then
+            if game:GetService("Players").LocalPlayer.TowersChosen.Slot1 == "Sharpshooter" or game:GetService("Players").LocalPlayer.TowersChosen.Slot2 == "Sharpshooter" or game:GetService("Players").LocalPlayer.TowersChosen.Slot3 == "Sharpshooter" or game:GetService("Players").LocalPlayer.TowersChosen.Slot4 == "Sharpshooter" or game:GetService("Players").LocalPlayer.TowersChosen.Slot5 == "Sharpshooter" then
+            else
+                ReplicatedStorage.Events.EquipTower:InvokeServer(LocalPlayer.TowersChosen.Slot1.Value)
+
+                ReplicatedStorage.Events.EquipTower:InvokeServer("Sharpshooter")
+            end
+        end
+    end)
+    ReplicatedStorage.Events.StartServer:InvokeServer("Solo", "Invite")
+
+    ReplicatedStorage.Events.UpdateMap:InvokeServer("Roundabout")
+
+    ReplicatedStorage.Events.UpdateAttributes:FireServer("Apocalypse")
+
+    ReplicatedStorage.Events.UpdateAttributes:FireServer("AllFlying")
+
+    ReplicatedStorage.Events.StartGame:InvokeServer()
+elseif game.PlaceId == 5527929546 then
+
+    function BigBoobs(Value)
+        for i,v in pairs(Workspace.Game.Towers:GetDescendants()) do 
+            if v.Name == "Sharpshooter" then 
+                v.Name = ("BigBoobs".. Value)
+            end 
+        end 
+    end
+
+    ReplicatedStorage.Events.VoteGamemode:FireServer("Hard")
+    ReplicatedStorage.Events.EndVote:FireServer()
+    
+    ReplicatedStorage.Events.PlaceTower:InvokeServer("Sharpshooter",Vector3.new(-4.0883917808532715, 5.142022609710693, 14.351950645446777),0)
+    BigBoobs(1)
+    
+    repeat wait() until game:GetService("Players").LocalPlayer.Cash.Value >= 400
+    ReplicatedStorage.Events.UpgradeTower:InvokeServer(workspace.Game.Towers.BigBoobs1, 1)
+    BigBoobs(1)
+    
+    repeat wait() until game:GetService("Players").LocalPlayer.Cash.Value >= 300
+    ReplicatedStorage.Events.UpgradeTower:InvokeServer(workspace.Game.Towers.BigBoobs1, 1)
+    BigBoobs(1)
+    
+    repeat wait() until game:GetService("Players").LocalPlayer.Cash.Value >= 450
+    ReplicatedStorage.Events.UpgradeTower:InvokeServer(workspace.Game.Towers.BigBoobs1, 2)
+    BigBoobs(1)
+    
+    repeat wait() until game:GetService("Players").LocalPlayer.Cash.Value >= 400
+    ReplicatedStorage.Events.UpgradeTower:InvokeServer(workspace.Game.Towers.BigBoobs1, 2)
+    BigBoobs(1)
+    
+    
+    repeat wait() until game:GetService("Players").LocalPlayer.Cash.Value >= 1500
+    ReplicatedStorage.Events.UpgradeTower:InvokeServer(workspace.Game.Towers.BigBoobs1, 2)
+
+    BigBoobs(1)
+    repeat wait() until game:GetService("Players").LocalPlayer.Cash.Value >= 3250
+    
+    ReplicatedStorage.Events.UpgradeTower:InvokeServer(workspace.Game.Towers.BigBoobs1, 2)
+    BigBoobs(1)
+
+    repeat wait() until game:GetService("Players").LocalPlayer.Cash.Value >= 600
+    ReplicatedStorage.Events.PlaceTower:InvokeServer("Sharpshooter",Vector3.new(-2.2681071758270264, 5.142024040222168, 13.361810684204102) , 0)
+    BigBoobs(2)
+
+    repeat wait() until game:GetService("Players").LocalPlayer.Cash.Value >= 400
+    ReplicatedStorage.Events.UpgradeTower:InvokeServer(workspace.Game.Towers.BigBoobs2, 1)
+
+    BigBoobs(2)
+
+    
+    repeat wait() until game:GetService("Players").LocalPlayer.Cash.Value >= 300
+    ReplicatedStorage.Events.UpgradeTower:InvokeServer(workspace.Game.Towers.BigBoobs2, 1)
+    BigBoobs(2)
+
+    
+    repeat wait() until game:GetService("Players").LocalPlayer.Cash.Value >= 1900
+    ReplicatedStorage.Events.UpgradeTower:InvokeServer(workspace.Game.Towers.BigBoobs2, 1)
+    BigBoobs(2)
+
+    
+    repeat wait() until game:GetService("Players").LocalPlayer.Cash.Value >= 6500
+    ReplicatedStorage.Events.UpgradeTower:InvokeServer(workspace.Game.Towers.BigBoobs2, 1)
+    BigBoobs(2)
+    
+    repeat wait() until game:GetService("Players").LocalPlayer.Cash.Value >= 600
+    ReplicatedStorage.Events.PlaceTower:InvokeServer("Sharpshooter",Vector3.new(-1.823824405670166, 5.142026901245117, 11.373711585998535) , 0)
+    BigBoobs(3)
+    
+    repeat wait() until game:GetService("Players").LocalPlayer.Cash.Value >= 400
+    ReplicatedStorage.Events.UpgradeTower:InvokeServer(workspace.Game.Towers.BigBoobs3, 1)
+    BigBoobs(3)
+    
+    repeat wait() until game:GetService("Players").LocalPlayer.Cash.Value >= 300
+    ReplicatedStorage.Events.UpgradeTower:InvokeServer(workspace.Game.Towers.BigBoobs3, 1)
+    BigBoobs(3)
+    
+    repeat wait() until game:GetService("Players").LocalPlayer.Cash.Value >= 1900
+    ReplicatedStorage.Events.UpgradeTower:InvokeServer(workspace.Game.Towers.BigBoobs3, 1)
+    BigBoobs(3)
+    
+    repeat wait() until game:GetService("Players").LocalPlayer.Cash.Value >= 6500
+    ReplicatedStorage.Events.UpgradeTower:InvokeServer(workspace.Game.Towers.BigBoobs3, 1)
+    BigBoobs(3)
+    
+    repeat wait() until game:GetService("Players").LocalPlayer.Cash.Value >= 600
+    ReplicatedStorage.Events.PlaceTower:InvokeServer("Sharpshooter",Vector3.new(-2.615933656692505, 5.142040252685547, 9.408670425415039) , 0)
+    BigBoobs(4) 
+    
+    repeat wait() until game:GetService("Players").LocalPlayer.Cash.Value >= 400
+    ReplicatedStorage.Events.UpgradeTower:InvokeServer(workspace.Game.Towers.BigBoobs4, 1)
+    BigBoobs(4) 
+    
+    repeat wait() until game:GetService("Players").LocalPlayer.Cash.Value >= 300
+    ReplicatedStorage.Events.UpgradeTower:InvokeServer(workspace.Game.Towers.BigBoobs4, 1)
+    BigBoobs(4) 
+    
+    repeat wait() until game:GetService("Players").LocalPlayer.Cash.Value >= 1900
+    ReplicatedStorage.Events.UpgradeTower:InvokeServer(workspace.Game.Towers.BigBoobs4, 1)
+    BigBoobs(4) 
+    
+    repeat wait() until game:GetService("Players").LocalPlayer.Cash.Value >= 6500
+    ReplicatedStorage.Events.UpgradeTower:InvokeServer(workspace.Game.Towers.BigBoobs4, 1)
+    BigBoobs(4)
+    
+
+
+
+    
+    repeat wait() until game:GetService("Players").LocalPlayer.Cash.Value >= 600
+    ReplicatedStorage.Events.PlaceTower:InvokeServer("Sharpshooter",Vector3.new(-4.433350086212158, 5.141976833343506, 8.4822416305542) , 0)
+    BigBoobs(5)     
+    
+    repeat wait() until game:GetService("Players").LocalPlayer.Cash.Value >= 400
+    ReplicatedStorage.Events.UpgradeTower:InvokeServer(workspace.Game.Towers.BigBoobs5, 1)
+    BigBoobs(5)     
+
+    
+    repeat wait() until game:GetService("Players").LocalPlayer.Cash.Value >= 300
+    ReplicatedStorage.Events.UpgradeTower:InvokeServer(workspace.Game.Towers.BigBoobs5, 1)
+    BigBoobs(5)     
+
+    
+    repeat wait() until game:GetService("Players").LocalPlayer.Cash.Value >= 1900
+    ReplicatedStorage.Events.UpgradeTower:InvokeServer(workspace.Game.Towers.BigBoobs5, 1)
+    BigBoobs(5)     
+
+    
+    repeat wait() until game:GetService("Players").LocalPlayer.Cash.Value >= 6500
+    ReplicatedStorage.Events.UpgradeTower:InvokeServer(workspace.Game.Towers.BigBoobs5, 1)
+    BigBoobs(5) 
+    
+
+
+    
+    
+    repeat wait() until game:GetService("Players").LocalPlayer.Cash.Value >= 600
+    ReplicatedStorage.Events.PlaceTower:InvokeServer("Sharpshooter",Vector3.new(-6.378623008728027, 5.141993999481201, 9.82049560546875) , 0)
+    BigBoobs(6) 
+    
+    repeat wait() until game:GetService("Players").LocalPlayer.Cash.Value >= 400
+    ReplicatedStorage.Events.UpgradeTower:InvokeServer(workspace.Game.Towers.BigBoobs6, 1)
+    BigBoobs(6) 
+    
+    repeat wait() until game:GetService("Players").LocalPlayer.Cash.Value >= 300
+    ReplicatedStorage.Events.UpgradeTower:InvokeServer(workspace.Game.Towers.BigBoobs6, 1)
+    BigBoobs(6) 
+    
+    repeat wait() until game:GetService("Players").LocalPlayer.Cash.Value >= 1900
+    ReplicatedStorage.Events.UpgradeTower:InvokeServer(workspace.Game.Towers.BigBoobs6, 1)
+    BigBoobs(6) 
+    
+    repeat wait() until game:GetService("Players").LocalPlayer.Cash.Value >= 6500
+    ReplicatedStorage.Events.UpgradeTower:InvokeServer(workspace.Game.Towers.BigBoobs6, 1)
+    BigBoobs(6) 
+    
+
+    repeat wait() until workspace.Game.GameFinished.VictoryType.Value == "Defeat"
+    game:GetService("TeleportService"):Teleport(4739557376)
+end
